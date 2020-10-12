@@ -34,9 +34,7 @@ func ConnectDataBase() {
 	)
 	fmt.Println(mysqlCredentials)
 	DB, err = gorm.Open("mysql", mysqlCredentials)
-	//defer DB.Close()
-	//DB, err = gorm.Open("mysql", "reetu:Reetu8995@@(localhost:3306)/test")
-
+	
 	if err != nil {
 		fmt.Printf("failed to connect to database!")
 		os.Exit(1)
