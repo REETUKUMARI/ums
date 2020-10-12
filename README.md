@@ -7,6 +7,15 @@ check whether the requested url is active or inactive
     - Gorm as orm Library
   - Docker
 # Installation
+
+### CREATE Your own .env File
+```
+MYSQL_USER="user_name"
+MYSQL_PASSWORD="password"
+MYSQL_DBNAME="table_name"
+MYSQL_HOST="localhost"
+MYSQL_PORT="3306"
+```
 ### 1. On Local Machine
 ```
 git clone https://github.com/REETUKUMARI/Uptime-Monitoring-System.git
