@@ -178,6 +178,10 @@ func TestUpdateUrl(t *testing.T) {
 
 	assert.Equal(t, http.StatusOK, w.Code)
 	assert.Equal(t, b.ID, response.ID)
+	assert.Equal(t, b.URLLink, response.URLLink)
+	assert.Equal(t, b.Status, response.Status)
 	assert.Equal(t, b.Frequency, response.Frequency)
+	assert.Equal(t, b.CrawlTimeout, response.CrawlTimeout)
+	assert.Equal(t, b.FailureCount, response.FailureCount)
 	assert.Equal(t, b.FailureThreshold, response.FailureThreshold)
 }
