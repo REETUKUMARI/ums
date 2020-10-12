@@ -64,6 +64,9 @@ func TestGetUrl(t *testing.T) {
 	assert.Equal(t, b.URLLink, response.URLLink)
 	assert.Equal(t, b.Status, response.Status)
 	assert.Equal(t, b.Frequency, response.Frequency)
+	assert.Equal(t, b.CrawlTimeout, response.CrawlTimeout)
+	assert.Equal(t, b.FailureCount, response.FailureCount)
+	assert.Equal(t, b.FailureThreshold, response.FailureThreshold)
 }
 func TestCreateUrl(t *testing.T) {
 	ctrl := gomock.NewController(t)
