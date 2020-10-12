@@ -65,7 +65,7 @@ func Updateurl(c *gin.Context) {
 	if err != nil {
 		c.AbortWithStatus(http.StatusNotFound)
 	}
-	c.JSON(http.StatusOK, gin.H{"data": url})
+	c.JSON(http.StatusOK, url)
 }
 func Deleteurl(c *gin.Context) {
 	idd := c.Params.ByName("id")
