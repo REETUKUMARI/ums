@@ -8,7 +8,7 @@ check whether the requested url is active or inactive
   - Docker
 # Installation
 
-### CREATE Your own .env File
+### CREATE Your .env File
 ```
 MYSQL_USER="user_name"
 MYSQL_PASSWORD="password"
